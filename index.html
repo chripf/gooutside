@@ -12,9 +12,11 @@
   <body>
     <h1>go outside!</h1>
     
-    <ul>
+    <div id="websites">
+    </div>
+    <!--<ul>
       <li><a href="https://olivermeier.github.io/haustiereBORG">Haustiere</a></li>
-    </ul>
+    </ul>-->
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -22,9 +24,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     
+    <script id="websites-template" type="text/x-handlebars-template">
+                                                                    
+      <div class="entry">
+        <h1>{{title}}</h1>
+        <div class="body">
+          {{body}}
+        </div>
+      </div>
+    </script>
+    
     <script>
       var source   = document.getElementById("websites-template").innerHTML;
       var template = Handlebars.compile(source);
+      var target = document.getElementById("websites");
+      target.innerHTML = template;
     </script>
    </body>
 </html>
