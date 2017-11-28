@@ -43,9 +43,9 @@
       ]
       
       var source   = document.getElementById("websites-template").innerHTML;
-      var template = Handlebars.compile(source, data:content);
+      var template = Handlebars.compile(source);
       var target = document.getElementById("websites");
-      target.innerHTML = template;
+      target.innerHTML = template(content);
     </script>
    </body>
 </html>
