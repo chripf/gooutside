@@ -28,7 +28,7 @@
     
     <script id="websites-template" type="text/x-handlebars-template">                                                                    
       <ul>
-        {{#each this}}
+        {{#each websites}}
         <li><a href="{{url}}">{{description}}</a></li>
         {{/each}}
       </ul>
@@ -36,9 +36,12 @@
     
     
     <script>
-      var content =  [
-        { description: "Tiere", url:"https://olivermeier.github.io/haustiereBORG"},        
-      ]
+      var content = 
+      {
+        websites :[
+          { description: "Tiere", url:"https://olivermeier.github.io/haustiereBORG"},        
+        ]
+      };
       
       var source   = document.getElementById("websites-template").innerHTML;
       var template = Handlebars.compile(source);
