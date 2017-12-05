@@ -35,11 +35,17 @@
     <script src="js/handlebars-v4.0.11.js"></script>
     
     <script id="websites-template" type="text/x-handlebars-template">                                                                    
-      <ul>
+      <div class="container">
+        <div class="row">
         {{#each websites}}
-        <li class="btn btn-lg btn-success"><a href="{{url}}">{{description}}</a></li>
+          <div class="col-lg-4">
+            <h1>☄</h1>
+            <h2>{{description}}</h2>
+            <p><a class="btn btn-secondary" href="{{url}}" role="button">View details »</a></p>
+          </div>          
         {{/each}}
-      </ul>
+        </div>
+      </div>
     </script>
     
     
