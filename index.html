@@ -35,6 +35,7 @@
     
     <script id="websites-template" type="text/x-handlebars-template">                                                                    
       <div class="container">
+        <h1 class="jumbotron">{{title}}</h1>
         <div class="row">
         {{#each websites}}
           <div class="col-lg-4">
@@ -51,6 +52,7 @@
     <script>
       var content = 
       {
+        title: "Webseiten 6bn 2017",       
         websites :[
           { description: "Tiere", icon: "😸", url:"https://olivermeier.github.io/haustiereBORG" },  
           { description: "Spiele", icon: "🎮", url:"https://sandrolipisl24.github.io/Videospielwebseite1-Borg/" },  
