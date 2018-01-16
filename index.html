@@ -46,6 +46,17 @@
         {{/each}}
         </div>
       </div>
+      <div class="container">
+        <h1 class="jumbotron">Snap!-Projekte</h1>
+        <ul>
+        {{#each snapProjects}}
+          <li>            
+            <h2>{{topic}}</h2>
+            <p><a class="btn btn-secondary" href="{{url}}" role="button">View details »</a></p>
+          </li>          
+        {{/each}}
+        </ul>
+      </div>
     </script>
     
     
