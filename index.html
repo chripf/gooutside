@@ -51,12 +51,14 @@
         <ul>
         {{#each snapProjects}}
           <li>            
-            <h2 class="col-4">{{topic}}</h2>
-            <p class="col-8">
-            {{#each team}}
-            <em>{{this}}</em><br/>
-            {{/each}}
-            </p>
+            <div class="row">
+              <h2 class="col-4">{{topic}}</h2>
+              <p class="col-8">
+              {{#each team}}
+              <em>{{this}}</em><br/>
+              {{/each}}
+              </p>
+            </div>
             <p>
               <a class="btn btn-success" href="{{url}}" role="button">Go to project »</a>
               <a class="btn btn-info" href="{{trello}}" role="button">Trello »</a>
