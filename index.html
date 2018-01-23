@@ -33,19 +33,7 @@
     
     <script src="js/handlebars-v4.0.11.js"></script>
     
-    <script id="websites-template" type="text/x-handlebars-template">                                                                    
-      <div class="container">
-        <h1 class="jumbotron">{{title}}</h1>
-        <div class="row">
-        {{#each websites}}
-          <div class="col-lg-4">
-            <h1>{{icon}}</h1>
-            <h2>{{description}}</h2>
-            <p><a class="btn btn-secondary" href="{{url}}" role="button">View details »</a></p>
-          </div>          
-        {{/each}}
-        </div>
-      </div>
+    <script id="websites-template" type="text/x-handlebars-template">    
       <div class="container">
         <h1 class="jumbotron">Snap!-Projekte</h1>
         <ul>
@@ -68,6 +56,19 @@
         {{/each}}
         </ul>
       </div>
+      <div class="container">
+        <h1 class="jumbotron">{{title}}</h1>
+        <div class="row">
+        {{#each websites}}
+          <div class="col-lg-4">
+            <h1>{{icon}}</h1>
+            <h2>{{description}}</h2>
+            <p><a class="btn btn-secondary" href="{{url}}" role="button">View details »</a></p>
+          </div>          
+        {{/each}}
+        </div>
+      </div>
+      
     </script>
     
     
@@ -95,7 +96,7 @@
           { 
             team: ["Julia Lerchenmüller", "Lukas Moosbrugger"],
             topic: "Sneaky Snake",
-            trello: "http://trello.com",
+            trello: "https://trello.com/b/w7B6h0zm/sneaky-snake",
             documentation: "https://docs.google.com/document/d/1Z62E2T8bdehSUyoMRQd4jYDJwquRUDcTgFdqS8A6z4g/edit?usp=sharing",
             url: "http://snap.berkeley.edu"
           },
